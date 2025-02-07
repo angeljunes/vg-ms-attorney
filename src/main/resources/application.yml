@@ -1,0 +1,24 @@
+server:
+  port: 8083
+
+spring:
+  application:
+    name: attorney
+
+  data:
+    mongodb:
+      uri: "mongodb+srv://admin:1234@mariaenriqueta.f47y4yu.mongodb.net/vg-ms-mariaenriqueta?retryWrites=true&w=majority"
+
+management:
+  endpoint:
+    health:
+      show-details: always
+
+springdoc:
+  swagger-ui:
+    path: /swagger-ui.html
+  api-docs:
+    path: /attorney
+
+api:
+  version: /api/v1
